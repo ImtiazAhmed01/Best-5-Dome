@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Conqueror Five</title>
+    <!-- Tailwind CDN link -->
     <script src="https://cdn.tailwindcss.com"></script>
+
 
 </head>
 
@@ -53,6 +55,8 @@
                     <button
                         class="bg-blue-800 px-7 py-2 text-2xl front-medium rounded-lg hover:bg-blue-400 mt-8 mb-5">Select</button>
                 </div>
+
+                <!-- player selected list  start-->
                 <div class="bg-black rounded-lg me-10">
                     <h1 class="text-4xl mt-9">Selected Players</h1>
                     <ul class="text-left mt-10 pl-10 text-xl">
@@ -63,6 +67,7 @@
                         <li class="pb-3">5.</li>
                     </ul>
                 </div>
+                <!-- player selected list  end-->
             </div>
         </section>
         <section class="mt-12 w-3/4 mx-auto">
@@ -88,6 +93,8 @@
                     <button
                         class="bg-blue-800 px-7 py-2 text-2xl front-medium rounded-lg hover:bg-blue-400 mt-8 mb-5">Select</button>
                 </div>
+
+                <!-- Calculation section start -->
                 <div class="bg-black rounded-lg">
                     <h1 class="text-4xl pt-5 pb-8">Budget</h1>
                     <p class="inline pr-5 text-xl">Per Player</p>
@@ -111,9 +118,11 @@
                     <button
                         class="text-center block bg-blue-800 px-7 py-2 text-2xl front-medium rounded-lg hover:bg-blue-400 mt-8 mb-6 ml-12 w-3/4">Calculate
                         Total</button>
-                    <p class="inline pr-10 text-xl mb-8">Player Expenses </p>
-                    <p class="inline text-xl"> $<span id="" t>00</span></p>
+                    <p class="inline pr-12 text-2xl mb-8">Total </p>
+                    <p class="inline text-2xl text-orange-700"> $<span id="" t>00</span></p>
                 </div>
+
+                <!-- Calculation section end -->
             </div>
         </section>
 
@@ -121,7 +130,10 @@
 
 
         <!-- Footer start -->
+        <footer class="bg-black border-t-4 border-white mt-5 p-20">
+            <p class="text-white text-center">Copyright @ 2022 All Rights Reserved.</p>
 
+        </footer>
         <!-- Footer end -->
     </main>
 
