@@ -3,23 +3,23 @@ function addToList(element) {
 
     const playerName = element.parentNode.children[1].innerText;
     const selectedPlayers = document.getElementById('selected-players');
-    const createPlayerList = document.createElement('list');
-    const liLength = allPlayerList();
+    const createPlayerList = document.createElement('li');
+    const liLength = allPlayersList();
     const liNewLength = liLength + 1;
 
     if (liNewLength > 5) {
-        alert("You can only select 5 players")
+        alert("You cannot select more than 5 players")
     } else {
-        createPlayerList.innerText = ` ${liNewLength}.  ${playerName}`
-        selectedPlayers.appendChild(createPlayerList)
+        createPlayerList.innerText = ` ${liNewLength}.  ${playerName}`;
+        selectedPlayers.appendChild(createPlayerList);
 
-        element.style.backgroundColor = "black"
+        element.style.backgroundColor = "grey"
         element.setAttribute("disabled", "true")
     }
 }
 
 document.getElementById('btn-calculate').addEventListener('click', function () {
-    const liLength = allPlayerList();
+    const liLength = allPlayersList();
     const playersCost = inputIntegerValue('players-cost');
     const playersTotalCost = liLength * playersCost;
 
@@ -37,7 +37,7 @@ document.getElementById('btn-total-cost').addEventListener('click', function () 
     const totalCost = playersTotalCost + managerCost + coachCost;
 
     if (isNaN(totalCost) == false && totalCost > 0) {
-        setText("totalcost", totalCost)
+        setText("total-cost", totalCost)
     }
 
 })

@@ -20,14 +20,14 @@ function innerTextToInteger(textId) {
     return inputIdTextInteger;
 }
 
-function setText(elementId, elementValue) {
+function setText(elementId, elementvalue) {
     const getElementId = document.getElementById(elementId);
-    getElementId.innerText = elementValue;
+    getElementId.innerText = elementvalue;
 }
 
 
-function allPlayerList() {
-    const playerList = document.querySelectorAll('list');
-    const playerListLength = playerList.length;
-    return playerListLength;
+function allPlayersList() {
+    const liList = document.querySelectorAll('li')
+    const liListLength = liList.length
+    return liListLength;
 }
